@@ -1,4 +1,15 @@
-# React + Vite
+# ICC Trading App
+
+This app includes a React learning experience plus an Express + MongoDB backend for login and progress syncing.
+
+## Backend setup
+
+Create a local `.env` file from `.env.example` and set your MongoDB connection string and JWT secret.
+
+## Run the app
+
+- `npm run dev:full` starts the API server and Vite together.
+- `npm run build` produces the production bundle.
 
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 

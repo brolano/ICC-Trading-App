@@ -223,27 +223,83 @@ function App() {
   const [activeView, setActiveView] = useState('lessons')
   const [selectedModuleId, setSelectedModuleId] = useState(MODULES[0].id)
   const [revealedCards, setRevealedCards] = useState({})
-  const [progress, setProgress] = useState(() => {
-    const fromStorage = localStorage.getItem('icc-progress-v1')
-    if (!fromStorage) {
-      return {
-        completedLessons: [],
-        quizScores: {},
-        simulator: { attempts: 0, correct: 0 },
-      }
-    }
-    return JSON.parse(fromStorage)
+  const [authStatus, setAuthStatus] = useState('loading')
+  const [authToken, setAuthToken] = useState(() => localStorage.getItem('icc-auth-token') || '')
+  const [authForm, setAuthForm] = useState({ username: '', password: '', displayName: '' })
+  const [authError, setAuthError] = useState('')
+  const [authSaving, setAuthSaving] = useState(false)
+  const [currentUser, setCurrentUser] = useState(null)
+  const [progress, setProgress] = useState({
+    completedLessons: [],
+    quizScores: {},
+    simulator: { attempts: 0, correct: 0 },
   })
   const [quizState, setQuizState] = useState({})
   const [scenario, setScenario] = useState(createScenario)
   const [visiblePoints, setVisiblePoints] = useState(8)
   const [simulatorFeedback, setSimulatorFeedback] = useState(null)
+  const [isHydrated, setIsHydrated] = useState(false)
 
   const selectedModule = MODULES.find((module) => module.id === selectedModuleId) ?? MODULES[0]
 
   useEffect(() => {
-    localStorage.setItem('icc-progress-v1', JSON.stringify(progress))
-  }, [progress])
+    async function hydrate() {
+      if (!authToken) {
+        setAuthStatus('unauthenticated')
+        setIsHydrated(true)
+        return
+      }
+
+      try {
+        const response = await fetch('/api/auth/me', {
+          headers: {
+            Authorization: `Bearer ${authToken}`,
+          },
+        })
+
+        if (!response.ok) {
+          throw new Error('Session expired')
+        }
+
+        const data = await response.json()
+        setCurrentUser(data.user)
+        setProgress(data.user.progress || progress)
+        setAuthStatus('authenticated')
+      } catch {
+        localStorage.removeItem('icc-auth-token')
+        setAuthToken('')
+        setCurrentUser(null)
+        setAuthStatus('unauthenticated')
+      } finally {
+        setIsHydrated(true)
+      }
+    }
+
+    hydrate()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [authToken])
+
+  useEffect(() => {
+    if (authStatus !== 'authenticated' || !currentUser || !isHydrated) return
+
+    const timer = setTimeout(async () => {
+      setAuthSaving(true)
+      try {
+        await fetch('/api/progress', {
+          method: 'PUT',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${authToken}`,
+          },
+          body: JSON.stringify({ progress }),
+        })
+      } finally {
+        setAuthSaving(false)
+      }
+    }, 500)
+
+    return () => clearTimeout(timer)
+  }, [authStatus, authToken, currentUser, isHydrated, progress])
 
   useEffect(() => {
     setSimulatorFeedback(null)
@@ -482,6 +538,48 @@ function App() {
     setScenario(createScenario())
   }
 
+  async function handleLogin(event) {
+    event.preventDefault()
+    setAuthError('')
+
+    try {
+      const response = await fetch('/api/auth/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(authForm),
+      })
+
+      const data = await response.json()
+
+      if (!response.ok) {
+        throw new Error(data.message || 'Unable to sign in')
+      }
+
+      localStorage.setItem('icc-auth-token', data.token)
+      setAuthToken(data.token)
+      setCurrentUser(data.user)
+      setProgress(data.user.progress || progress)
+      setAuthStatus('authenticated')
+    } catch (error) {
+      setAuthError(error.message)
+    }
+  }
+
+  function handleLogout() {
+    localStorage.removeItem('icc-auth-token')
+    setAuthToken('')
+    setCurrentUser(null)
+    setAuthStatus('unauthenticated')
+    setProgress({
+      completedLessons: [],
+      quizScores: {},
+      simulator: { attempts: 0, correct: 0 },
+    })
+    setQuizState({})
+  }
+
   const visibleSeries = scenario.series.slice(0, visiblePoints)
   const min = Math.min(...scenario.series)
   const max = Math.max(...scenario.series)
@@ -493,6 +591,65 @@ function App() {
     })
     .join(' ')
 
+  if (authStatus === 'loading') {
+    return (
+      <main className="app-shell auth-shell">
+        <section className="auth-card">
+          <p className="eyebrow">Secure learner access</p>
+          <h1>Checking your session</h1>
+          <p className="lead">Restoring your saved ICC progress from the backend.</p>
+        </section>
+      </main>
+    )
+  }
+
+  if (authStatus !== 'authenticated') {
+    return (
+      <main className="app-shell auth-shell">
+        <section className="auth-card">
+          <p className="eyebrow">Secure learner access</p>
+          <h1>Sign in to save your ICC progress</h1>
+          <p className="lead">
+            Your lessons, simulator score, quiz accuracy, and badges are synced to MongoDB after login.
+          </p>
+          <form className="auth-form" onSubmit={handleLogin}>
+            <label>
+              Username
+              <input
+                value={authForm.username}
+                onChange={(event) => setAuthForm((previous) => ({ ...previous, username: event.target.value }))}
+                autoComplete="username"
+                placeholder="learner01"
+              />
+            </label>
+            <label>
+              Password
+              <input
+                type="password"
+                value={authForm.password}
+                onChange={(event) => setAuthForm((previous) => ({ ...previous, password: event.target.value }))}
+                autoComplete="current-password"
+                placeholder="Create or enter your password"
+              />
+            </label>
+            <label>
+              Display name
+              <input
+                value={authForm.displayName}
+                onChange={(event) =>
+                  setAuthForm((previous) => ({ ...previous, displayName: event.target.value }))
+                }
+                placeholder="Optional"
+              />
+            </label>
+            {authError ? <p className="auth-error">{authError}</p> : null}
+            <button type="submit">Sign In</button>
+          </form>
+        </section>
+      </main>
+    )
+  }
+
   return (
     <main className="app-shell">
       <header className="hero-panel">
@@ -502,6 +659,10 @@ function App() {
           <p className="lead">
             24 lessons, live phase simulation, instant scoring, and module quiz intelligence in one
             adaptive workspace.
+          </p>
+          <p className="session-chip">
+            Signed in as {currentUser?.displayName || currentUser?.username || 'learner'}
+            {authSaving ? ' · syncing progress...' : ' · progress synced to MongoDB'}
           </p>
         </div>
         <div className="hero-metrics">
@@ -519,6 +680,10 @@ function App() {
           </div>
         </div>
       </header>
+
+      <div className="session-actions">
+        <button onClick={handleLogout}>Log out</button>
+      </div>
 
       <section className="phase-board" aria-label="ICC phase breakdown">
         <div>
