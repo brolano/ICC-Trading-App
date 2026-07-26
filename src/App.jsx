@@ -219,6 +219,25 @@ function createScenario() {
   }
 }
 
+function createEmptyProgress() {
+  return {
+    completedLessons: [],
+    quizScores: {},
+    simulator: { attempts: 0, correct: 0 },
+  }
+}
+
+function normalizeProgress(value) {
+  return {
+    completedLessons: Array.isArray(value?.completedLessons) ? value.completedLessons : [],
+    quizScores: value?.quizScores && typeof value.quizScores === 'object' ? value.quizScores : {},
+    simulator: {
+      attempts: Number(value?.simulator?.attempts ?? 0),
+      correct: Number(value?.simulator?.correct ?? 0),
+    },
+  }
+}
+
 function App() {
   const [activeView, setActiveView] = useState('lessons')
   const [selectedModuleId, setSelectedModuleId] = useState(MODULES[0].id)
@@ -229,11 +248,7 @@ function App() {
   const [authError, setAuthError] = useState('')
   const [authSaving, setAuthSaving] = useState(false)
   const [currentUser, setCurrentUser] = useState(null)
-  const [progress, setProgress] = useState({
-    completedLessons: [],
-    quizScores: {},
-    simulator: { attempts: 0, correct: 0 },
-  })
+  const [progress, setProgress] = useState(createEmptyProgress)
   const [quizState, setQuizState] = useState({})
   const [scenario, setScenario] = useState(createScenario)
   const [visiblePoints, setVisiblePoints] = useState(8)
@@ -263,7 +278,7 @@ function App() {
 
         const data = await response.json()
         setCurrentUser(data.user)
-        setProgress(data.user.progress || progress)
+        setProgress(normalizeProgress(data.user.progress))
         setAuthStatus('authenticated')
       } catch {
         localStorage.removeItem('icc-auth-token')
@@ -317,14 +332,14 @@ function App() {
   }, [scenario.id, scenario.series.length])
 
   const courseStats = useMemo(() => {
-    const completedLessonsCount = progress.completedLessons.length
-    const quizEntries = Object.values(progress.quizScores)
+    const completedLessonsCount = progress.completedLessons?.length ?? 0
+    const quizEntries = Object.values(progress.quizScores ?? {})
     const averageQuizAccuracy =
       quizEntries.length > 0
         ? quizEntries.reduce((sum, item) => sum + item.accuracy, 0) / quizEntries.length
         : 0
     const simulatorAccuracy =
-      progress.simulator.attempts > 0
+      progress.simulator?.attempts > 0
         ? (progress.simulator.correct / progress.simulator.attempts) * 100
         : 0
     const overall = Math.min(
@@ -346,9 +361,9 @@ function App() {
   const moduleProgress = useMemo(() => {
     return MODULES.map((module) => {
       const lessonDone = module.lessons.filter((lesson) =>
-        progress.completedLessons.includes(lesson.id),
+        (progress.completedLessons ?? []).includes(lesson.id),
       ).length
-      const quizResult = progress.quizScores[module.id]
+      const quizResult = (progress.quizScores ?? {})[module.id]
       const completion =
         (lessonDone / module.lessons.length) * 70 + ((quizResult?.accuracy ?? 0) / 100) * 30
       return {
@@ -363,19 +378,19 @@ function App() {
 
   const unlockedBadges = useMemo(() => {
     const completedModules = moduleProgress.filter((item) => item.completed).length
-    const quizEntries = Object.values(progress.quizScores)
+    const quizEntries = Object.values(progress.quizScores ?? {})
     const badges = [
       {
         id: 'starter',
         name: 'Lesson Starter',
         rule: 'Complete your first lesson',
-        unlocked: progress.completedLessons.length >= 1,
+        unlocked: (progress.completedLessons?.length ?? 0) >= 1,
       },
       {
         id: 'phase-reader',
         name: 'Phase Reader',
         rule: 'Get 3 correct simulator calls',
-        unlocked: progress.simulator.correct >= 3,
+        unlocked: (progress.simulator?.correct ?? 0) >= 3,
       },
       {
         id: 'quiz-tactician',
@@ -560,7 +575,7 @@ function App() {
       localStorage.setItem('icc-auth-token', data.token)
       setAuthToken(data.token)
       setCurrentUser(data.user)
-      setProgress(data.user.progress || progress)
+      setProgress(normalizeProgress(data.user.progress))
       setAuthStatus('authenticated')
     } catch (error) {
       setAuthError(error.message)
@@ -572,11 +587,7 @@ function App() {
     setAuthToken('')
     setCurrentUser(null)
     setAuthStatus('unauthenticated')
-    setProgress({
-      completedLessons: [],
-      quizScores: {},
-      simulator: { attempts: 0, correct: 0 },
-    })
+    setProgress(createEmptyProgress())
     setQuizState({})
   }
 
