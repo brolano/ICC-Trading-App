@@ -1,0 +1,1498 @@
+{
+  "modules": [
+    {
+      "id": "module-1",
+      "title": "Module 1: How Crypto Markets Actually Work",
+      "topic": "Market Structure Foundations",
+      "lessons": [
+        {
+          "id": "M1-L1",
+          "number": 1,
+          "title": "What Is Crypto & Why Does Price Move?",
+          "phase": {
+            "id": "accumulation",
+            "name": "Accumulation",
+            "color": "#1f8a70"
+          },
+          "objective": "Understand basic market mechanics: buyers vs sellers and why price moves.",
+          "reveals": [
+            {
+              "title": "SAY",
+              "content": "Every candle is the outcome of a fight between buyers and sellers — price shows who won."
+            },
+            {
+              "title": "TEACHER TIP",
+              "content": "Use a tug-of-war analogy and show a live BTC chart to demonstrate."
+            },
+            {
+              "title": "HOMEWORK",
+              "content": "Observe a Bitcoin chart for 15 minutes and note up/down moves — no trades."
+            }
+          ]
+        },
+        {
+          "id": "M1-L2",
+          "number": 2,
+          "title": "Reading a Candle Chart for the First Time",
+          "phase": {
+            "id": "manipulation",
+            "name": "Manipulation",
+            "color": "#e67e22"
+          },
+          "objective": "Learn the components of a candlestick and the difference between green and red candles.",
+          "reveals": [
+            {
+              "title": "SAY",
+              "content": "A candle shows open, high, low and close for a timeframe — the body shows who won that period."
+            },
+            {
+              "title": "TEACHER TIP",
+              "content": "Pull up BTC on TradingView and point to individual candles while explaining."
+            },
+            {
+              "title": "HOMEWORK",
+              "content": "Find 5 green and 5 red candles on a 1H chart and record their O/H/L/C."
+            }
+          ]
+        },
+        {
+          "id": "M1-L3",
+          "number": 3,
+          "title": "Timeframes: Which One Should You Use?",
+          "phase": {
+            "id": "expansion",
+            "name": "Expansion",
+            "color": "#2962ff"
+          },
+          "objective": "Understand the top-down approach and which timeframes to prioritize for ICC.",
+          "reveals": [
+            {
+              "title": "SAY",
+              "content": "Daily shows the big picture; 1H is where ICC setups are found; 15m/5m fine-tune entries."
+            },
+            {
+              "title": "TEACHER TIP",
+              "content": "Demonstrate the same asset across Daily → 4H → 1H → 15m to show differences."
+            },
+            {
+              "title": "HOMEWORK",
+              "content": "Describe the trend on Daily, 4H, 1H and 15m for BTC in one sentence each."
+            }
+          ]
+        },
+        {
+          "id": "M1-L4",
+          "number": 4,
+          "title": "Support & Resistance: The Building Blocks",
+          "phase": {
+            "id": "distribution",
+            "name": "Distribution",
+            "color": "#d64545"
+          },
+          "objective": "Learn how to identify and draw key support and resistance zones correctly.",
+          "reveals": [
+            {
+              "title": "SAY",
+              "content": "Support is a floor where buyers defend; resistance is a ceiling where sellers push back."
+            },
+            {
+              "title": "TEACHER TIP",
+              "content": "Draw zones (not lines) and be selective — prefer 2–3 clear levels per chart."
+            },
+            {
+              "title": "HOMEWORK",
+              "content": "Draw 2–3 support/resistance zones on BTC 1H chart and share a screenshot."
+            }
+          ]
+        }
+      ],
+      "quizBank": [
+        {
+          "id": "module-1-q1",
+          "moduleId": "module-1",
+          "question": "Which lesson best matches this objective: \"Understand basic market mechanics: buyers vs sellers and why price moves.\"?",
+          "type": "mcq",
+          "options": [
+            "Risk-to-Reward: Only Take Good Deals",
+            "Using Multiple Timeframes for Entries",
+            "What Is Crypto & Why Does Price Move?",
+            "Reading a Candle Chart for the First Time"
+          ],
+          "correctIndex": 2,
+          "explanation": "Understand basic market mechanics: buyers vs sellers and why price moves."
+        },
+        {
+          "id": "module-1-q2",
+          "moduleId": "module-1",
+          "question": "Which lesson best matches this objective: \"Learn the components of a candlestick and the difference between green and red candles.\"?",
+          "type": "mcq",
+          "options": [
+            "Reading a Candle Chart for the First Time",
+            "Support & Resistance: The Building Blocks",
+            "Uptrends: Higher Highs & Higher Lows",
+            "Stop Loss Placement: Protecting Yourself"
+          ],
+          "correctIndex": 0,
+          "explanation": "Learn the components of a candlestick and the difference between green and red candles."
+        },
+        {
+          "id": "module-1-q3",
+          "moduleId": "module-1",
+          "question": "Which lesson best matches this objective: \"Understand the top-down approach and which timeframes to prioritize for ICC.\"?",
+          "type": "mcq",
+          "options": [
+            "Timeframes: Which One Should You Use?",
+            "Take Profit: When to Get Out",
+            "Uptrends: Higher Highs & Higher Lows",
+            "Where Exactly Do You Enter the Trade?"
+          ],
+          "correctIndex": 0,
+          "explanation": "Understand the top-down approach and which timeframes to prioritize for ICC."
+        },
+        {
+          "id": "module-1-q4",
+          "moduleId": "module-1",
+          "question": "Which lesson best matches this objective: \"Learn how to identify and draw key support and resistance zones correctly.\"?",
+          "type": "mcq",
+          "options": [
+            "When Trends Switch: The Golden Nugget",
+            "Stop Loss Placement: Protecting Yourself",
+            "Uptrends: Higher Highs & Higher Lows",
+            "Support & Resistance: The Building Blocks"
+          ],
+          "correctIndex": 3,
+          "explanation": "Learn how to identify and draw key support and resistance zones correctly."
+        },
+        {
+          "id": "module-1-q5",
+          "moduleId": "module-1",
+          "question": "Which lesson best matches this objective: \"Understand basic market mechanics: buyers vs sellers and why price moves.\"?",
+          "type": "mcq",
+          "options": [
+            "What Is Crypto & Why Does Price Move?",
+            "Phase 1: Indication (The Signal)",
+            "Downtrends: Lower Lows & Lower Highs",
+            "Using Multiple Timeframes for Entries"
+          ],
+          "correctIndex": 0,
+          "explanation": "Understand basic market mechanics: buyers vs sellers and why price moves."
+        },
+        {
+          "id": "module-1-q6",
+          "moduleId": "module-1",
+          "question": "Which lesson best matches this objective: \"Learn the components of a candlestick and the difference between green and red candles.\"?",
+          "type": "mcq",
+          "options": [
+            "Bonus: Review & Next Steps",
+            "Putting It All Together: Your Trading Plan",
+            "Reading a Candle Chart for the First Time",
+            "Downtrends: Lower Lows & Lower Highs"
+          ],
+          "correctIndex": 2,
+          "explanation": "Learn the components of a candlestick and the difference between green and red candles."
+        },
+        {
+          "id": "module-1-q7",
+          "moduleId": "module-1",
+          "question": "Which lesson best matches this objective: \"Understand the top-down approach and which timeframes to prioritize for ICC.\"?",
+          "type": "mcq",
+          "options": [
+            "Phase 1: Indication (The Signal)",
+            "Timeframes: Which One Should You Use?",
+            "How to Build a Trading Routine",
+            "Trading Psychology for Beginners"
+          ],
+          "correctIndex": 1,
+          "explanation": "Understand the top-down approach and which timeframes to prioritize for ICC."
+        },
+        {
+          "id": "module-1-q8",
+          "moduleId": "module-1",
+          "question": "Which lesson best matches this objective: \"Learn how to identify and draw key support and resistance zones correctly.\"?",
+          "type": "mcq",
+          "options": [
+            "What Is ICC? The 3-Phase Cycle Explained",
+            "Consolidation: When to Walk Away",
+            "Course Wrap & Final Project",
+            "Support & Resistance: The Building Blocks"
+          ],
+          "correctIndex": 3,
+          "explanation": "Learn how to identify and draw key support and resistance zones correctly."
+        },
+        {
+          "id": "module-1-q9",
+          "moduleId": "module-1",
+          "question": "Which lesson best matches this objective: \"Understand basic market mechanics: buyers vs sellers and why price moves.\"?",
+          "type": "mcq",
+          "options": [
+            "Reading a Candle Chart for the First Time",
+            "What Is Crypto & Why Does Price Move?",
+            "Stop Loss Placement: Protecting Yourself",
+            "Bonus: Review & Next Steps"
+          ],
+          "correctIndex": 1,
+          "explanation": "Understand basic market mechanics: buyers vs sellers and why price moves."
+        },
+        {
+          "id": "module-1-q10",
+          "moduleId": "module-1",
+          "question": "Which lesson best matches this objective: \"Learn the components of a candlestick and the difference between green and red candles.\"?",
+          "type": "mcq",
+          "options": [
+            "Uptrends: Higher Highs & Higher Lows",
+            "Reading a Candle Chart for the First Time",
+            "Downtrends: Lower Lows & Lower Highs",
+            "Take Profit: When to Get Out"
+          ],
+          "correctIndex": 1,
+          "explanation": "Learn the components of a candlestick and the difference between green and red candles."
+        }
+      ]
+    },
+    {
+      "id": "module-2",
+      "title": "Module 2: Market Structure & Trends",
+      "topic": "Liquidity and Intent",
+      "lessons": [
+        {
+          "id": "M2-L1",
+          "number": 5,
+          "title": "Uptrends: Higher Highs & Higher Lows",
+          "phase": {
+            "id": "expansion",
+            "name": "Expansion",
+            "color": "#2962ff"
+          },
+          "objective": "Identify uptrends via higher highs and higher lows and trade with the trend.",
+          "reveals": [
+            {
+              "title": "SAY",
+              "content": "An uptrend prints higher highs and higher lows — bias to buys only in an uptrend."
+            },
+            {
+              "title": "TEACHER TIP",
+              "content": "Mark HH/HL on a BTC chart and ask students to point to each structure."
+            },
+            {
+              "title": "HOMEWORK",
+              "content": "Find an uptrend on a 1H chart and mark every HH and HL; share a screenshot."
+            }
+          ]
+        },
+        {
+          "id": "M2-L2",
+          "number": 6,
+          "title": "Downtrends: Lower Lows & Lower Highs",
+          "phase": {
+            "id": "distribution",
+            "name": "Distribution",
+            "color": "#d64545"
+          },
+          "objective": "Recognize downtrends and focus on sell opportunities until structure changes.",
+          "reveals": [
+            {
+              "title": "SAY",
+              "content": "Downtrend rule: lower lows and lower highs; trade with the bias and avoid buys."
+            },
+            {
+              "title": "TEACHER TIP",
+              "content": "Use historical downtrend examples (e.g., 2022 BTC) for clarity."
+            },
+            {
+              "title": "HOMEWORK",
+              "content": "Find a downtrend, mark LL/LH and explain why it qualifies as a downtrend."
+            }
+          ]
+        },
+        {
+          "id": "M2-L3",
+          "number": 7,
+          "title": "Consolidation: When to Walk Away",
+          "phase": {
+            "id": "accumulation",
+            "name": "Accumulation",
+            "color": "#1f8a70"
+          },
+          "objective": "Spot consolidation ranges and learn why ICC setups fail in chop.",
+          "reveals": [
+            {
+              "title": "SAY",
+              "content": "Consolidation = sideways range; avoid trading until structure resolves."
+            },
+            {
+              "title": "TEACHER TIP",
+              "content": "Point out fake breakouts and explain why they lure beginners."
+            },
+            {
+              "title": "HOMEWORK",
+              "content": "Find a consolidation range, screenshot, and mark the top/bottom of the range."
+            }
+          ]
+        },
+        {
+          "id": "M2-L4",
+          "number": 8,
+          "title": "When Trends Switch: The Golden Nugget",
+          "phase": {
+            "id": "manipulation",
+            "name": "Manipulation",
+            "color": "#e67e22"
+          },
+          "objective": "Detect early signs of trend switches and adjust trading narrative accordingly.",
+          "reveals": [
+            {
+              "title": "SAY",
+              "content": "A lower high in an uptrend or a higher low in a downtrend signals potential switch."
+            },
+            {
+              "title": "TEACHER TIP",
+              "content": "Show a real example where a structure break preceded a trend reversal."
+            },
+            {
+              "title": "HOMEWORK",
+              "content": "Analyze three charts and report whether each is uptrend, downtrend, or consolidation."
+            }
+          ]
+        }
+      ],
+      "quizBank": [
+        {
+          "id": "module-2-q1",
+          "moduleId": "module-2",
+          "question": "Which lesson best matches this objective: \"Identify uptrends via higher highs and higher lows and trade with the trend.\"?",
+          "type": "mcq",
+          "options": [
+            "Bonus: Review & Next Steps",
+            "Uptrends: Higher Highs & Higher Lows",
+            "Stop Loss Placement: Protecting Yourself",
+            "What Is Crypto & Why Does Price Move?"
+          ],
+          "correctIndex": 1,
+          "explanation": "Identify uptrends via higher highs and higher lows and trade with the trend."
+        },
+        {
+          "id": "module-2-q2",
+          "moduleId": "module-2",
+          "question": "Which lesson best matches this objective: \"Recognize downtrends and focus on sell opportunities until structure changes.\"?",
+          "type": "mcq",
+          "options": [
+            "Putting It All Together: Your Trading Plan",
+            "How to Build a Trading Routine",
+            "Downtrends: Lower Lows & Lower Highs",
+            "What Is ICC? The 3-Phase Cycle Explained"
+          ],
+          "correctIndex": 2,
+          "explanation": "Recognize downtrends and focus on sell opportunities until structure changes."
+        },
+        {
+          "id": "module-2-q3",
+          "moduleId": "module-2",
+          "question": "Which lesson best matches this objective: \"Spot consolidation ranges and learn why ICC setups fail in chop.\"?",
+          "type": "mcq",
+          "options": [
+            "Downtrends: Lower Lows & Lower Highs",
+            "Consolidation: When to Walk Away",
+            "Uptrends: Higher Highs & Higher Lows",
+            "The 1-2% Rule & Position Sizing"
+          ],
+          "correctIndex": 1,
+          "explanation": "Spot consolidation ranges and learn why ICC setups fail in chop."
+        },
+        {
+          "id": "module-2-q4",
+          "moduleId": "module-2",
+          "question": "Which lesson best matches this objective: \"Detect early signs of trend switches and adjust trading narrative accordingly.\"?",
+          "type": "mcq",
+          "options": [
+            "When Trends Switch: The Golden Nugget",
+            "Risk-to-Reward: Only Take Good Deals",
+            "Stop Loss Placement: Protecting Yourself",
+            "Bonus: Review & Next Steps"
+          ],
+          "correctIndex": 0,
+          "explanation": "Detect early signs of trend switches and adjust trading narrative accordingly."
+        },
+        {
+          "id": "module-2-q5",
+          "moduleId": "module-2",
+          "question": "Which lesson best matches this objective: \"Identify uptrends via higher highs and higher lows and trade with the trend.\"?",
+          "type": "mcq",
+          "options": [
+            "Downtrends: Lower Lows & Lower Highs",
+            "Why Most Beginners Blow Their Accounts",
+            "Trading Psychology for Beginners",
+            "Uptrends: Higher Highs & Higher Lows"
+          ],
+          "correctIndex": 3,
+          "explanation": "Identify uptrends via higher highs and higher lows and trade with the trend."
+        },
+        {
+          "id": "module-2-q6",
+          "moduleId": "module-2",
+          "question": "Which lesson best matches this objective: \"Recognize downtrends and focus on sell opportunities until structure changes.\"?",
+          "type": "mcq",
+          "options": [
+            "Consolidation: When to Walk Away",
+            "Downtrends: Lower Lows & Lower Highs",
+            "Support & Resistance: The Building Blocks",
+            "What Is Crypto & Why Does Price Move?"
+          ],
+          "correctIndex": 1,
+          "explanation": "Recognize downtrends and focus on sell opportunities until structure changes."
+        },
+        {
+          "id": "module-2-q7",
+          "moduleId": "module-2",
+          "question": "Which lesson best matches this objective: \"Spot consolidation ranges and learn why ICC setups fail in chop.\"?",
+          "type": "mcq",
+          "options": [
+            "How to Build a Trading Routine",
+            "Course Wrap & Final Project",
+            "When Trends Switch: The Golden Nugget",
+            "Consolidation: When to Walk Away"
+          ],
+          "correctIndex": 3,
+          "explanation": "Spot consolidation ranges and learn why ICC setups fail in chop."
+        },
+        {
+          "id": "module-2-q8",
+          "moduleId": "module-2",
+          "question": "Which lesson best matches this objective: \"Detect early signs of trend switches and adjust trading narrative accordingly.\"?",
+          "type": "mcq",
+          "options": [
+            "Take Profit: When to Get Out",
+            "What Is ICC? The 3-Phase Cycle Explained",
+            "Where Exactly Do You Enter the Trade?",
+            "When Trends Switch: The Golden Nugget"
+          ],
+          "correctIndex": 3,
+          "explanation": "Detect early signs of trend switches and adjust trading narrative accordingly."
+        },
+        {
+          "id": "module-2-q9",
+          "moduleId": "module-2",
+          "question": "Which lesson best matches this objective: \"Identify uptrends via higher highs and higher lows and trade with the trend.\"?",
+          "type": "mcq",
+          "options": [
+            "Phase 3: Continuation (Your Entry)",
+            "Uptrends: Higher Highs & Higher Lows",
+            "Timeframes: Which One Should You Use?",
+            "What Is Crypto & Why Does Price Move?"
+          ],
+          "correctIndex": 1,
+          "explanation": "Identify uptrends via higher highs and higher lows and trade with the trend."
+        },
+        {
+          "id": "module-2-q10",
+          "moduleId": "module-2",
+          "question": "Which lesson best matches this objective: \"Recognize downtrends and focus on sell opportunities until structure changes.\"?",
+          "type": "mcq",
+          "options": [
+            "Uptrends: Higher Highs & Higher Lows",
+            "Why Most Beginners Blow Their Accounts",
+            "Downtrends: Lower Lows & Lower Highs",
+            "Timeframes: Which One Should You Use?"
+          ],
+          "correctIndex": 2,
+          "explanation": "Recognize downtrends and focus on sell opportunities until structure changes."
+        }
+      ]
+    },
+    {
+      "id": "module-3",
+      "title": "Module 3: The ICC Framework",
+      "topic": "Execution Timing",
+      "lessons": [
+        {
+          "id": "M3-L1",
+          "number": 9,
+          "title": "What Is ICC? The 3-Phase Cycle Explained",
+          "phase": {
+            "id": "accumulation",
+            "name": "Accumulation",
+            "color": "#1f8a70"
+          },
+          "objective": "Introduce Indication, Correction, Continuation and why waiting matters.",
+          "reveals": [
+            {
+              "title": "SAY",
+              "content": "ICC = Indication, Correction, Continuation — wait for Continuation to enter."
+            },
+            {
+              "title": "TEACHER TIP",
+              "content": "Draw a simple sketch of I → C → C before showing real charts."
+            },
+            {
+              "title": "HOMEWORK",
+              "content": "Watch Trades By Sci videos and bring one question to class."
+            }
+          ]
+        },
+        {
+          "id": "M3-L2",
+          "number": 10,
+          "title": "Phase 1: Indication (The Signal)",
+          "phase": {
+            "id": "manipulation",
+            "name": "Manipulation",
+            "color": "#e67e22"
+          },
+          "objective": "Define valid indication breaks and distinguish fakeouts.",
+          "reveals": [
+            {
+              "title": "SAY",
+              "content": "An Indication requires a clear candle close beyond a structural high/low — no wicks-only breaks."
+            },
+            {
+              "title": "TEACHER TIP",
+              "content": "Compare a valid break and a fakeout side-by-side for emphasis."
+            },
+            {
+              "title": "HOMEWORK",
+              "content": "Find one valid Indication and one fakeout and explain the difference."
+            }
+          ]
+        },
+        {
+          "id": "M3-L3",
+          "number": 11,
+          "title": "Phase 2: Correction (The Pullback)",
+          "phase": {
+            "id": "distribution",
+            "name": "Distribution",
+            "color": "#d64545"
+          },
+          "objective": "Understand why corrections occur and how to watch for invalidation of setups.",
+          "reveals": [
+            {
+              "title": "SAY",
+              "content": "Corrections pull against the trend but should not break structure if the setup remains valid."
+            },
+            {
+              "title": "TEACHER TIP",
+              "content": "Show corrections of different depths and discuss how to judge them."
+            },
+            {
+              "title": "HOMEWORK",
+              "content": "Screenshot a correction that did NOT break structure and explain why it held."
+            }
+          ]
+        },
+        {
+          "id": "M3-L4",
+          "number": 12,
+          "title": "Phase 3: Continuation (Your Entry)",
+          "phase": {
+            "id": "expansion",
+            "name": "Expansion",
+            "color": "#2962ff"
+          },
+          "objective": "Learn confirmation rules for Continuation and where to place stops.",
+          "reveals": [
+            {
+              "title": "SAY",
+              "content": "Enter on the Continuation break — confirmation that buyers/sellers regained control."
+            },
+            {
+              "title": "TEACHER TIP",
+              "content": "Drop to 15m/5m to pick a precise entry candle during Continuation."
+            },
+            {
+              "title": "HOMEWORK",
+              "content": "Find two Continuation entries on 1H setups and mark your entry and stop levels."
+            }
+          ]
+        }
+      ],
+      "quizBank": [
+        {
+          "id": "module-3-q1",
+          "moduleId": "module-3",
+          "question": "Which lesson best matches this objective: \"Introduce Indication, Correction, Continuation and why waiting matters.\"?",
+          "type": "mcq",
+          "options": [
+            "Why Most Beginners Blow Their Accounts",
+            "Phase 3: Continuation (Your Entry)",
+            "What Is ICC? The 3-Phase Cycle Explained",
+            "Downtrends: Lower Lows & Lower Highs"
+          ],
+          "correctIndex": 2,
+          "explanation": "Introduce Indication, Correction, Continuation and why waiting matters."
+        },
+        {
+          "id": "module-3-q2",
+          "moduleId": "module-3",
+          "question": "Which lesson best matches this objective: \"Define valid indication breaks and distinguish fakeouts.\"?",
+          "type": "mcq",
+          "options": [
+            "Phase 1: Indication (The Signal)",
+            "When Trends Switch: The Golden Nugget",
+            "Reading a Candle Chart for the First Time",
+            "Phase 2: Correction (The Pullback)"
+          ],
+          "correctIndex": 0,
+          "explanation": "Define valid indication breaks and distinguish fakeouts."
+        },
+        {
+          "id": "module-3-q3",
+          "moduleId": "module-3",
+          "question": "Which lesson best matches this objective: \"Understand why corrections occur and how to watch for invalidation of setups.\"?",
+          "type": "mcq",
+          "options": [
+            "Phase 3: Continuation (Your Entry)",
+            "Why Most Beginners Blow Their Accounts",
+            "Phase 2: Correction (The Pullback)",
+            "When Trends Switch: The Golden Nugget"
+          ],
+          "correctIndex": 2,
+          "explanation": "Understand why corrections occur and how to watch for invalidation of setups."
+        },
+        {
+          "id": "module-3-q4",
+          "moduleId": "module-3",
+          "question": "Which lesson best matches this objective: \"Learn confirmation rules for Continuation and where to place stops.\"?",
+          "type": "mcq",
+          "options": [
+            "Where Exactly Do You Enter the Trade?",
+            "The 1-2% Rule & Position Sizing",
+            "Phase 3: Continuation (Your Entry)",
+            "What Is Crypto & Why Does Price Move?"
+          ],
+          "correctIndex": 2,
+          "explanation": "Learn confirmation rules for Continuation and where to place stops."
+        },
+        {
+          "id": "module-3-q5",
+          "moduleId": "module-3",
+          "question": "Which lesson best matches this objective: \"Introduce Indication, Correction, Continuation and why waiting matters.\"?",
+          "type": "mcq",
+          "options": [
+            "Phase 1: Indication (The Signal)",
+            "What Is ICC? The 3-Phase Cycle Explained",
+            "Consolidation: When to Walk Away",
+            "Using Multiple Timeframes for Entries"
+          ],
+          "correctIndex": 1,
+          "explanation": "Introduce Indication, Correction, Continuation and why waiting matters."
+        },
+        {
+          "id": "module-3-q6",
+          "moduleId": "module-3",
+          "question": "Which lesson best matches this objective: \"Define valid indication breaks and distinguish fakeouts.\"?",
+          "type": "mcq",
+          "options": [
+            "Risk-to-Reward: Only Take Good Deals",
+            "Phase 1: Indication (The Signal)",
+            "Phase 3: Continuation (Your Entry)",
+            "Downtrends: Lower Lows & Lower Highs"
+          ],
+          "correctIndex": 1,
+          "explanation": "Define valid indication breaks and distinguish fakeouts."
+        },
+        {
+          "id": "module-3-q7",
+          "moduleId": "module-3",
+          "question": "Which lesson best matches this objective: \"Understand why corrections occur and how to watch for invalidation of setups.\"?",
+          "type": "mcq",
+          "options": [
+            "How to Build a Trading Routine",
+            "Uptrends: Higher Highs & Higher Lows",
+            "What Is Crypto & Why Does Price Move?",
+            "Phase 2: Correction (The Pullback)"
+          ],
+          "correctIndex": 3,
+          "explanation": "Understand why corrections occur and how to watch for invalidation of setups."
+        },
+        {
+          "id": "module-3-q8",
+          "moduleId": "module-3",
+          "question": "Which lesson best matches this objective: \"Learn confirmation rules for Continuation and where to place stops.\"?",
+          "type": "mcq",
+          "options": [
+            "Consolidation: When to Walk Away",
+            "Phase 3: Continuation (Your Entry)",
+            "Take Profit: When to Get Out",
+            "Downtrends: Lower Lows & Lower Highs"
+          ],
+          "correctIndex": 1,
+          "explanation": "Learn confirmation rules for Continuation and where to place stops."
+        },
+        {
+          "id": "module-3-q9",
+          "moduleId": "module-3",
+          "question": "Which lesson best matches this objective: \"Introduce Indication, Correction, Continuation and why waiting matters.\"?",
+          "type": "mcq",
+          "options": [
+            "Phase 2: Correction (The Pullback)",
+            "Reading a Candle Chart for the First Time",
+            "Timeframes: Which One Should You Use?",
+            "What Is ICC? The 3-Phase Cycle Explained"
+          ],
+          "correctIndex": 3,
+          "explanation": "Introduce Indication, Correction, Continuation and why waiting matters."
+        },
+        {
+          "id": "module-3-q10",
+          "moduleId": "module-3",
+          "question": "Which lesson best matches this objective: \"Define valid indication breaks and distinguish fakeouts.\"?",
+          "type": "mcq",
+          "options": [
+            "Course Wrap & Final Project",
+            "Phase 1: Indication (The Signal)",
+            "Take Profit: When to Get Out",
+            "Timeframes: Which One Should You Use?"
+          ],
+          "correctIndex": 1,
+          "explanation": "Define valid indication breaks and distinguish fakeouts."
+        }
+      ]
+    },
+    {
+      "id": "module-4",
+      "title": "Module 4: Entries, Stop Losses & Take Profits",
+      "topic": "Risk and Position Craft",
+      "lessons": [
+        {
+          "id": "M4-L1",
+          "number": 13,
+          "title": "Where Exactly Do You Enter the Trade?",
+          "phase": {
+            "id": "expansion",
+            "name": "Expansion",
+            "color": "#2962ff"
+          },
+          "objective": "Follow a checklist before entry and use multi-timeframe confirmation.",
+          "reveals": [
+            {
+              "title": "SAY",
+              "content": "Entry is the last step — confirm trend, Indication, Correction and Continuation."
+            },
+            {
+              "title": "TEACHER TIP",
+              "content": "Run through a live checklist on a chart so students internalize it."
+            },
+            {
+              "title": "HOMEWORK",
+              "content": "Use the checklist on one ICC setup and document each decision before paper-trading."
+            }
+          ]
+        },
+        {
+          "id": "M4-L2",
+          "number": 14,
+          "title": "Stop Loss Placement: Protecting Yourself",
+          "phase": {
+            "id": "distribution",
+            "name": "Distribution",
+            "color": "#d64545"
+          },
+          "objective": "Place stops where the trade is invalidated (beyond Correction extremes).",
+          "reveals": [
+            {
+              "title": "SAY",
+              "content": "Stops go beyond the Correction extreme — not where you’re merely comfortable losing."
+            },
+            {
+              "title": "TEACHER TIP",
+              "content": "Explain buffers and why moving stops wider ruins risk management."
+            },
+            {
+              "title": "HOMEWORK",
+              "content": "Pick an entry and design an appropriate stop with a brief justification."
+            }
+          ]
+        },
+        {
+          "id": "M4-L3",
+          "number": 15,
+          "title": "Take Profit: When to Get Out",
+          "phase": {
+            "id": "accumulation",
+            "name": "Accumulation",
+            "color": "#1f8a70"
+          },
+          "objective": "Choose targets by nearby support/resistance and use partial exits or trailing stops.",
+          "reveals": [
+            {
+              "title": "SAY",
+              "content": "Target the next key level; consider partial exits and moving stops to break-even."
+            },
+            {
+              "title": "TEACHER TIP",
+              "content": "Discuss psychology of exits and demonstrate partial exit math."
+            },
+            {
+              "title": "HOMEWORK",
+              "content": "Plan a take-profit strategy for your paper-trade and record the R:R."
+            }
+          ]
+        },
+        {
+          "id": "M4-L4",
+          "number": 16,
+          "title": "Using Multiple Timeframes for Entries",
+          "phase": {
+            "id": "manipulation",
+            "name": "Manipulation",
+            "color": "#e67e22"
+          },
+          "objective": "Use 4H→1H→15m/5m flow to tighten entries and improve risk-to-reward.",
+          "reveals": [
+            {
+              "title": "SAY",
+              "content": "4H shapes the story, 1H shows the setup, 15m/5m gives the precise entry."
+            },
+            {
+              "title": "TEACHER TIP",
+              "content": "Live-demo a multi-timeframe entry to show stop size differences."
+            },
+            {
+              "title": "HOMEWORK",
+              "content": "Identify a multi-timeframe entry and compute stop distance and position size."
+            }
+          ]
+        }
+      ],
+      "quizBank": [
+        {
+          "id": "module-4-q1",
+          "moduleId": "module-4",
+          "question": "Which lesson best matches this objective: \"Follow a checklist before entry and use multi-timeframe confirmation.\"?",
+          "type": "mcq",
+          "options": [
+            "Phase 2: Correction (The Pullback)",
+            "Where Exactly Do You Enter the Trade?",
+            "Trading Psychology for Beginners",
+            "Consolidation: When to Walk Away"
+          ],
+          "correctIndex": 1,
+          "explanation": "Follow a checklist before entry and use multi-timeframe confirmation."
+        },
+        {
+          "id": "module-4-q2",
+          "moduleId": "module-4",
+          "question": "Which lesson best matches this objective: \"Place stops where the trade is invalidated (beyond Correction extremes).\"?",
+          "type": "mcq",
+          "options": [
+            "Consolidation: When to Walk Away",
+            "When Trends Switch: The Golden Nugget",
+            "Stop Loss Placement: Protecting Yourself",
+            "Using Multiple Timeframes for Entries"
+          ],
+          "correctIndex": 2,
+          "explanation": "Place stops where the trade is invalidated (beyond Correction extremes)."
+        },
+        {
+          "id": "module-4-q3",
+          "moduleId": "module-4",
+          "question": "Which lesson best matches this objective: \"Choose targets by nearby support/resistance and use partial exits or trailing stops.\"?",
+          "type": "mcq",
+          "options": [
+            "Take Profit: When to Get Out",
+            "What Is ICC? The 3-Phase Cycle Explained",
+            "Downtrends: Lower Lows & Lower Highs",
+            "The 1-2% Rule & Position Sizing"
+          ],
+          "correctIndex": 0,
+          "explanation": "Choose targets by nearby support/resistance and use partial exits or trailing stops."
+        },
+        {
+          "id": "module-4-q4",
+          "moduleId": "module-4",
+          "question": "Which lesson best matches this objective: \"Use 4H→1H→15m/5m flow to tighten entries and improve risk-to-reward.\"?",
+          "type": "mcq",
+          "options": [
+            "When Trends Switch: The Golden Nugget",
+            "What Is Crypto & Why Does Price Move?",
+            "Using Multiple Timeframes for Entries",
+            "Why Most Beginners Blow Their Accounts"
+          ],
+          "correctIndex": 2,
+          "explanation": "Use 4H→1H→15m/5m flow to tighten entries and improve risk-to-reward."
+        },
+        {
+          "id": "module-4-q5",
+          "moduleId": "module-4",
+          "question": "Which lesson best matches this objective: \"Follow a checklist before entry and use multi-timeframe confirmation.\"?",
+          "type": "mcq",
+          "options": [
+            "Take Profit: When to Get Out",
+            "How to Build a Trading Routine",
+            "Where Exactly Do You Enter the Trade?",
+            "Trading Psychology for Beginners"
+          ],
+          "correctIndex": 2,
+          "explanation": "Follow a checklist before entry and use multi-timeframe confirmation."
+        },
+        {
+          "id": "module-4-q6",
+          "moduleId": "module-4",
+          "question": "Which lesson best matches this objective: \"Place stops where the trade is invalidated (beyond Correction extremes).\"?",
+          "type": "mcq",
+          "options": [
+            "Stop Loss Placement: Protecting Yourself",
+            "Phase 2: Correction (The Pullback)",
+            "The 1-2% Rule & Position Sizing",
+            "When Trends Switch: The Golden Nugget"
+          ],
+          "correctIndex": 0,
+          "explanation": "Place stops where the trade is invalidated (beyond Correction extremes)."
+        },
+        {
+          "id": "module-4-q7",
+          "moduleId": "module-4",
+          "question": "Which lesson best matches this objective: \"Choose targets by nearby support/resistance and use partial exits or trailing stops.\"?",
+          "type": "mcq",
+          "options": [
+            "When Trends Switch: The Golden Nugget",
+            "Using Multiple Timeframes for Entries",
+            "Trading Psychology for Beginners",
+            "Take Profit: When to Get Out"
+          ],
+          "correctIndex": 3,
+          "explanation": "Choose targets by nearby support/resistance and use partial exits or trailing stops."
+        },
+        {
+          "id": "module-4-q8",
+          "moduleId": "module-4",
+          "question": "Which lesson best matches this objective: \"Use 4H→1H→15m/5m flow to tighten entries and improve risk-to-reward.\"?",
+          "type": "mcq",
+          "options": [
+            "Using Multiple Timeframes for Entries",
+            "Uptrends: Higher Highs & Higher Lows",
+            "Course Wrap & Final Project",
+            "Timeframes: Which One Should You Use?"
+          ],
+          "correctIndex": 0,
+          "explanation": "Use 4H→1H→15m/5m flow to tighten entries and improve risk-to-reward."
+        },
+        {
+          "id": "module-4-q9",
+          "moduleId": "module-4",
+          "question": "Which lesson best matches this objective: \"Follow a checklist before entry and use multi-timeframe confirmation.\"?",
+          "type": "mcq",
+          "options": [
+            "Stop Loss Placement: Protecting Yourself",
+            "Downtrends: Lower Lows & Lower Highs",
+            "How to Build a Trading Routine",
+            "Where Exactly Do You Enter the Trade?"
+          ],
+          "correctIndex": 3,
+          "explanation": "Follow a checklist before entry and use multi-timeframe confirmation."
+        },
+        {
+          "id": "module-4-q10",
+          "moduleId": "module-4",
+          "question": "Which lesson best matches this objective: \"Place stops where the trade is invalidated (beyond Correction extremes).\"?",
+          "type": "mcq",
+          "options": [
+            "Downtrends: Lower Lows & Lower Highs",
+            "Support & Resistance: The Building Blocks",
+            "Stop Loss Placement: Protecting Yourself",
+            "Take Profit: When to Get Out"
+          ],
+          "correctIndex": 2,
+          "explanation": "Place stops where the trade is invalidated (beyond Correction extremes)."
+        }
+      ]
+    },
+    {
+      "id": "module-5",
+      "title": "Module 5: Risk Management & Position Sizing",
+      "topic": "Multi-Timeframe Alignment",
+      "lessons": [
+        {
+          "id": "M5-L1",
+          "number": 17,
+          "title": "Why Most Beginners Blow Their Accounts",
+          "phase": {
+            "id": "distribution",
+            "name": "Distribution",
+            "color": "#d64545"
+          },
+          "objective": "Understand common fatal mistakes and why risk management matters more than setups.",
+          "reveals": [
+            {
+              "title": "SAY",
+              "content": "Most account blowups are caused by poor risk management, not strategy flaws."
+            },
+            {
+              "title": "TEACHER TIP",
+              "content": "Share real-world stories to emphasize the psychological component."
+            },
+            {
+              "title": "HOMEWORK",
+              "content": "Audit your recent demo trades for risk sizing errors and note patterns."
+            }
+          ]
+        },
+        {
+          "id": "M5-L2",
+          "number": 18,
+          "title": "The 1-2% Rule & Position Sizing",
+          "phase": {
+            "id": "accumulation",
+            "name": "Accumulation",
+            "color": "#1f8a70"
+          },
+          "objective": "Teach the 1-2% risk rule and how to calculate position size based on stop distance.",
+          "reveals": [
+            {
+              "title": "SAY",
+              "content": "Risk no more than 1-2% per trade to survive losing streaks and preserve capital."
+            },
+            {
+              "title": "TEACHER TIP",
+              "content": "Work through example math with student account sizes."
+            },
+            {
+              "title": "HOMEWORK",
+              "content": "Calculate position size for three hypothetical stops with your account size."
+            }
+          ]
+        },
+        {
+          "id": "M5-L3",
+          "number": 19,
+          "title": "Risk-to-Reward: Only Take Good Deals",
+          "phase": {
+            "id": "expansion",
+            "name": "Expansion",
+            "color": "#2962ff"
+          },
+          "objective": "Apply pre-trade R:R checks and enforce a minimum 1:2 requirement.",
+          "reveals": [
+            {
+              "title": "SAY",
+              "content": "Only take trades with at least 1:2 risk-to-reward — it changes required winrate."
+            },
+            {
+              "title": "TEACHER TIP",
+              "content": "Show how R:R affects long-term expectancy with simple math."
+            },
+            {
+              "title": "HOMEWORK",
+              "content": "Revisit your paper trades and compute the R:R for each; improve entries if needed."
+            }
+          ]
+        }
+      ],
+      "quizBank": [
+        {
+          "id": "module-5-q1",
+          "moduleId": "module-5",
+          "question": "Which lesson best matches this objective: \"Understand common fatal mistakes and why risk management matters more than setups.\"?",
+          "type": "mcq",
+          "options": [
+            "Uptrends: Higher Highs & Higher Lows",
+            "Why Most Beginners Blow Their Accounts",
+            "Bonus: Review & Next Steps",
+            "Using Multiple Timeframes for Entries"
+          ],
+          "correctIndex": 1,
+          "explanation": "Understand common fatal mistakes and why risk management matters more than setups."
+        },
+        {
+          "id": "module-5-q2",
+          "moduleId": "module-5",
+          "question": "Which lesson best matches this objective: \"Teach the 1-2% risk rule and how to calculate position size based on stop distance.\"?",
+          "type": "mcq",
+          "options": [
+            "Course Wrap & Final Project",
+            "The 1-2% Rule & Position Sizing",
+            "What Is Crypto & Why Does Price Move?",
+            "Why Most Beginners Blow Their Accounts"
+          ],
+          "correctIndex": 1,
+          "explanation": "Teach the 1-2% risk rule and how to calculate position size based on stop distance."
+        },
+        {
+          "id": "module-5-q3",
+          "moduleId": "module-5",
+          "question": "Which lesson best matches this objective: \"Apply pre-trade R:R checks and enforce a minimum 1:2 requirement.\"?",
+          "type": "mcq",
+          "options": [
+            "Phase 3: Continuation (Your Entry)",
+            "Risk-to-Reward: Only Take Good Deals",
+            "Reading a Candle Chart for the First Time",
+            "Where Exactly Do You Enter the Trade?"
+          ],
+          "correctIndex": 1,
+          "explanation": "Apply pre-trade R:R checks and enforce a minimum 1:2 requirement."
+        },
+        {
+          "id": "module-5-q4",
+          "moduleId": "module-5",
+          "question": "Which lesson best matches this objective: \"Understand common fatal mistakes and why risk management matters more than setups.\"?",
+          "type": "mcq",
+          "options": [
+            "When Trends Switch: The Golden Nugget",
+            "Why Most Beginners Blow Their Accounts",
+            "Phase 1: Indication (The Signal)",
+            "Reading a Candle Chart for the First Time"
+          ],
+          "correctIndex": 1,
+          "explanation": "Understand common fatal mistakes and why risk management matters more than setups."
+        },
+        {
+          "id": "module-5-q5",
+          "moduleId": "module-5",
+          "question": "Which lesson best matches this objective: \"Teach the 1-2% risk rule and how to calculate position size based on stop distance.\"?",
+          "type": "mcq",
+          "options": [
+            "The 1-2% Rule & Position Sizing",
+            "Phase 1: Indication (The Signal)",
+            "Putting It All Together: Your Trading Plan",
+            "When Trends Switch: The Golden Nugget"
+          ],
+          "correctIndex": 0,
+          "explanation": "Teach the 1-2% risk rule and how to calculate position size based on stop distance."
+        },
+        {
+          "id": "module-5-q6",
+          "moduleId": "module-5",
+          "question": "Which lesson best matches this objective: \"Apply pre-trade R:R checks and enforce a minimum 1:2 requirement.\"?",
+          "type": "mcq",
+          "options": [
+            "Timeframes: Which One Should You Use?",
+            "Consolidation: When to Walk Away",
+            "Risk-to-Reward: Only Take Good Deals",
+            "Phase 1: Indication (The Signal)"
+          ],
+          "correctIndex": 2,
+          "explanation": "Apply pre-trade R:R checks and enforce a minimum 1:2 requirement."
+        },
+        {
+          "id": "module-5-q7",
+          "moduleId": "module-5",
+          "question": "Which lesson best matches this objective: \"Understand common fatal mistakes and why risk management matters more than setups.\"?",
+          "type": "mcq",
+          "options": [
+            "The 1-2% Rule & Position Sizing",
+            "Course Wrap & Final Project",
+            "Why Most Beginners Blow Their Accounts",
+            "Bonus: Review & Next Steps"
+          ],
+          "correctIndex": 2,
+          "explanation": "Understand common fatal mistakes and why risk management matters more than setups."
+        },
+        {
+          "id": "module-5-q8",
+          "moduleId": "module-5",
+          "question": "Which lesson best matches this objective: \"Teach the 1-2% risk rule and how to calculate position size based on stop distance.\"?",
+          "type": "mcq",
+          "options": [
+            "Reading a Candle Chart for the First Time",
+            "The 1-2% Rule & Position Sizing",
+            "Uptrends: Higher Highs & Higher Lows",
+            "When Trends Switch: The Golden Nugget"
+          ],
+          "correctIndex": 1,
+          "explanation": "Teach the 1-2% risk rule and how to calculate position size based on stop distance."
+        },
+        {
+          "id": "module-5-q9",
+          "moduleId": "module-5",
+          "question": "Which lesson best matches this objective: \"Apply pre-trade R:R checks and enforce a minimum 1:2 requirement.\"?",
+          "type": "mcq",
+          "options": [
+            "Risk-to-Reward: Only Take Good Deals",
+            "Stop Loss Placement: Protecting Yourself",
+            "Putting It All Together: Your Trading Plan",
+            "Trading Psychology for Beginners"
+          ],
+          "correctIndex": 0,
+          "explanation": "Apply pre-trade R:R checks and enforce a minimum 1:2 requirement."
+        },
+        {
+          "id": "module-5-q10",
+          "moduleId": "module-5",
+          "question": "Which lesson best matches this objective: \"Understand common fatal mistakes and why risk management matters more than setups.\"?",
+          "type": "mcq",
+          "options": [
+            "Putting It All Together: Your Trading Plan",
+            "Why Most Beginners Blow Their Accounts",
+            "Course Wrap & Final Project",
+            "How to Build a Trading Routine"
+          ],
+          "correctIndex": 1,
+          "explanation": "Understand common fatal mistakes and why risk management matters more than setups."
+        }
+      ]
+    },
+    {
+      "id": "module-6",
+      "title": "Module 6: Mindset, Consistency & Next Steps",
+      "topic": "Advanced ICC Playbooks",
+      "lessons": [
+        {
+          "id": "M6-L1",
+          "number": 20,
+          "title": "Trading Psychology for Beginners",
+          "phase": {
+            "id": "manipulation",
+            "name": "Manipulation",
+            "color": "#e67e22"
+          },
+          "objective": "Recognize fear, greed, FOMO and revenge trading and how to manage them.",
+          "reveals": [
+            {
+              "title": "SAY",
+              "content": "Process over outcome — score yourself on process, not individual trade results."
+            },
+            {
+              "title": "TEACHER TIP",
+              "content": "Encourage journaling and share a short emotional self-checklist."
+            },
+            {
+              "title": "HOMEWORK",
+              "content": "Start a trade journal and record emotions for 5 paper trades."
+            }
+          ]
+        },
+        {
+          "id": "M6-L2",
+          "number": 21,
+          "title": "How to Build a Trading Routine",
+          "phase": {
+            "id": "accumulation",
+            "name": "Accumulation",
+            "color": "#1f8a70"
+          },
+          "objective": "Create a repeatable pre/during/post session routine to build consistency.",
+          "reveals": [
+            {
+              "title": "SAY",
+              "content": "Consistency beats spikes of activity — routines create reproducible behavior."
+            },
+            {
+              "title": "TEACHER TIP",
+              "content": "Provide a sample daily checklist students can copy."
+            },
+            {
+              "title": "HOMEWORK",
+              "content": "Draft a daily routine and follow it for one week; report back."
+            }
+          ]
+        },
+        {
+          "id": "M6-L3",
+          "number": 22,
+          "title": "Putting It All Together: Your Trading Plan",
+          "phase": {
+            "id": "expansion",
+            "name": "Expansion",
+            "color": "#2962ff"
+          },
+          "objective": "Write a personal trading plan covering asset choice, timeframe, risk and rules.",
+          "reveals": [
+            {
+              "title": "SAY",
+              "content": "A written plan is your rulebook — include assets, timeframes, stop rules, R:R and journal rules."
+            },
+            {
+              "title": "TEACHER TIP",
+              "content": "Ask students to share plans and give peer feedback for accountability."
+            },
+            {
+              "title": "HOMEWORK",
+              "content": "Write and share your personal trading plan; paper trade 5 setups using it."
+            }
+          ]
+        },
+        {
+          "id": "M6-L4",
+          "number": 23,
+          "title": "Course Wrap & Final Project",
+          "phase": {
+            "id": "accumulation",
+            "name": "Accumulation",
+            "color": "#1f8a70"
+          },
+          "objective": "Consolidate learning with a final project: written plan + 5 paper trades.",
+          "reveals": [
+            {
+              "title": "SAY",
+              "content": "Complete the final project: a written plan and documented paper trades for review."
+            },
+            {
+              "title": "TEACHER TIP",
+              "content": "Offer a Q&A and peer review session one week after course end."
+            },
+            {
+              "title": "HOMEWORK",
+              "content": "Submit final project: plan + 5 documented paper trades."
+            }
+          ]
+        },
+        {
+          "id": "M6-L5",
+          "number": 24,
+          "title": "Bonus: Review & Next Steps",
+          "phase": {
+            "id": "expansion",
+            "name": "Expansion",
+            "color": "#2962ff"
+          },
+          "objective": "Review key takeaways and plan the next steps for continued improvement.",
+          "reveals": [
+            {
+              "title": "SAY",
+              "content": "Summarize the ICC checklist and personal next steps for continued progress."
+            },
+            {
+              "title": "TEACHER TIP",
+              "content": "Provide resources for further study and recommend review cadence."
+            },
+            {
+              "title": "HOMEWORK",
+              "content": "Create a 30-day improvement plan: daily routine, targets, and journaling cadence."
+            }
+          ]
+        }
+      ],
+      "quizBank": [
+        {
+          "id": "module-6-q1",
+          "moduleId": "module-6",
+          "question": "Which lesson best matches this objective: \"Recognize fear, greed, FOMO and revenge trading and how to manage them.\"?",
+          "type": "mcq",
+          "options": [
+            "Reading a Candle Chart for the First Time",
+            "Trading Psychology for Beginners",
+            "Phase 1: Indication (The Signal)",
+            "Using Multiple Timeframes for Entries"
+          ],
+          "correctIndex": 1,
+          "explanation": "Recognize fear, greed, FOMO and revenge trading and how to manage them."
+        },
+        {
+          "id": "module-6-q2",
+          "moduleId": "module-6",
+          "question": "Which lesson best matches this objective: \"Create a repeatable pre/during/post session routine to build consistency.\"?",
+          "type": "mcq",
+          "options": [
+            "Phase 2: Correction (The Pullback)",
+            "How to Build a Trading Routine",
+            "When Trends Switch: The Golden Nugget",
+            "The 1-2% Rule & Position Sizing"
+          ],
+          "correctIndex": 1,
+          "explanation": "Create a repeatable pre/during/post session routine to build consistency."
+        },
+        {
+          "id": "module-6-q3",
+          "moduleId": "module-6",
+          "question": "Which lesson best matches this objective: \"Write a personal trading plan covering asset choice, timeframe, risk and rules.\"?",
+          "type": "mcq",
+          "options": [
+            "Uptrends: Higher Highs & Higher Lows",
+            "Using Multiple Timeframes for Entries",
+            "Putting It All Together: Your Trading Plan",
+            "Why Most Beginners Blow Their Accounts"
+          ],
+          "correctIndex": 2,
+          "explanation": "Write a personal trading plan covering asset choice, timeframe, risk and rules."
+        },
+        {
+          "id": "module-6-q4",
+          "moduleId": "module-6",
+          "question": "Which lesson best matches this objective: \"Consolidate learning with a final project: written plan + 5 paper trades.\"?",
+          "type": "mcq",
+          "options": [
+            "Reading a Candle Chart for the First Time",
+            "Phase 1: Indication (The Signal)",
+            "Course Wrap & Final Project",
+            "The 1-2% Rule & Position Sizing"
+          ],
+          "correctIndex": 2,
+          "explanation": "Consolidate learning with a final project: written plan + 5 paper trades."
+        },
+        {
+          "id": "module-6-q5",
+          "moduleId": "module-6",
+          "question": "Which lesson best matches this objective: \"Review key takeaways and plan the next steps for continued improvement.\"?",
+          "type": "mcq",
+          "options": [
+            "Bonus: Review & Next Steps",
+            "Where Exactly Do You Enter the Trade?",
+            "Take Profit: When to Get Out",
+            "What Is Crypto & Why Does Price Move?"
+          ],
+          "correctIndex": 0,
+          "explanation": "Review key takeaways and plan the next steps for continued improvement."
+        },
+        {
+          "id": "module-6-q6",
+          "moduleId": "module-6",
+          "question": "Which lesson best matches this objective: \"Recognize fear, greed, FOMO and revenge trading and how to manage them.\"?",
+          "type": "mcq",
+          "options": [
+            "Phase 1: Indication (The Signal)",
+            "Risk-to-Reward: Only Take Good Deals",
+            "Trading Psychology for Beginners",
+            "Why Most Beginners Blow Their Accounts"
+          ],
+          "correctIndex": 2,
+          "explanation": "Recognize fear, greed, FOMO and revenge trading and how to manage them."
+        },
+        {
+          "id": "module-6-q7",
+          "moduleId": "module-6",
+          "question": "Which lesson best matches this objective: \"Create a repeatable pre/during/post session routine to build consistency.\"?",
+          "type": "mcq",
+          "options": [
+            "How to Build a Trading Routine",
+            "Course Wrap & Final Project",
+            "Risk-to-Reward: Only Take Good Deals",
+            "Stop Loss Placement: Protecting Yourself"
+          ],
+          "correctIndex": 0,
+          "explanation": "Create a repeatable pre/during/post session routine to build consistency."
+        },
+        {
+          "id": "module-6-q8",
+          "moduleId": "module-6",
+          "question": "Which lesson best matches this objective: \"Write a personal trading plan covering asset choice, timeframe, risk and rules.\"?",
+          "type": "mcq",
+          "options": [
+            "Putting It All Together: Your Trading Plan",
+            "When Trends Switch: The Golden Nugget",
+            "Timeframes: Which One Should You Use?",
+            "Uptrends: Higher Highs & Higher Lows"
+          ],
+          "correctIndex": 0,
+          "explanation": "Write a personal trading plan covering asset choice, timeframe, risk and rules."
+        },
+        {
+          "id": "module-6-q9",
+          "moduleId": "module-6",
+          "question": "Which lesson best matches this objective: \"Consolidate learning with a final project: written plan + 5 paper trades.\"?",
+          "type": "mcq",
+          "options": [
+            "Course Wrap & Final Project",
+            "Uptrends: Higher Highs & Higher Lows",
+            "Timeframes: Which One Should You Use?",
+            "What Is Crypto & Why Does Price Move?"
+          ],
+          "correctIndex": 0,
+          "explanation": "Consolidate learning with a final project: written plan + 5 paper trades."
+        },
+        {
+          "id": "module-6-q10",
+          "moduleId": "module-6",
+          "question": "Which lesson best matches this objective: \"Review key takeaways and plan the next steps for continued improvement.\"?",
+          "type": "mcq",
+          "options": [
+            "Bonus: Review & Next Steps",
+            "Downtrends: Lower Lows & Lower Highs",
+            "Reading a Candle Chart for the First Time",
+            "Why Most Beginners Blow Their Accounts"
+          ],
+          "correctIndex": 0,
+          "explanation": "Review key takeaways and plan the next steps for continued improvement."
+        }
+      ]
+    }
+  ]
+}
